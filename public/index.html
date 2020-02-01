@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.6.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.6.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.6.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.6.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.6.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <!-- Noramlize -->
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+
+    <!-- Material Components -->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script defer src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script defer src="/material.js"></script>
+
+    <style media="screen">
+      #canvas {
+        padding: 100px;
+      }
+      .caine-card {
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="mdc-top-app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+          <span class="mdc-top-app-bar__title">Title</span>
+        </section>
+      </div>
+    </header>
+
+    <div id="canvas">
+
+      <button class="mdc-button foo-button">
+        <div class="mdc-button__ripple"></div>
+        <span id="load" class="mdc-button__label">Firebase SDK Loading&hellip;</span>
+      </button>
+
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+
+          <div class="mdc-layout-grid__cell">
+            <div class="mdc-card">
+              <div class="mdc-card__primary-action" tabindex="0">
+                <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(&quot;https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg&quot;);"></div>
+                <div class="caine-card">
+                  <h2 class="mdc-typography mdc-typography--headline6">Our Changing Planet</h2>
+                  <h3 class="mdc-typography mdc-typography--subtitle2">by Kurt Wagner</h3>
+                  <div class="mdc-typography mdc-typography--body2">Visit ten places on our planet that are undergoing the biggest changes today.</div>
+                </div>
+              </div>
+              <div class="mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">  <span class="mdc-button__ripple"></span> Read</button>
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">  <span class="mdc-button__ripple"></span> Bookmark</button>
+                </div>
+                <div class="mdc-card__action-icons">
+                  <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to favorites">
+                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
+                    <i class="material-icons mdc-icon-button__icon">favorite_border</i>
+                  </button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Share" data-mdc-ripple-is-unbounded="true">share</button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdc-layout-grid__cell">
+            <div class="mdc-card">
+              <div class="mdc-card__primary-action" tabindex="0">
+                <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(&quot;https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg&quot;);"></div>
+                <div class="caine-card">
+                  <h2 class="mdc-typography mdc-typography--headline6">Our Changing Planet</h2>
+                  <h3 class="mdc-typography mdc-typography--subtitle2">by Kurt Wagner</h3>
+                  <div class="mdc-typography mdc-typography--body2">Visit ten places on our planet that are undergoing the biggest changes today.</div>
+                </div>
+              </div>
+              <div class="mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">  <span class="mdc-button__ripple"></span> Read</button>
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">  <span class="mdc-button__ripple"></span> Bookmark</button>
+                </div>
+                <div class="mdc-card__action-icons">
+                  <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to favorites">
+                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
+                    <i class="material-icons mdc-icon-button__icon">favorite_border</i>
+                  </button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Share" data-mdc-ripple-is-unbounded="true">share</button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdc-layout-grid__cell">
+            <div class="mdc-card">
+              <div class="mdc-card__primary-action" tabindex="0">
+                <div class="mdc-card__media mdc-card__media--16-9" style="background-image: url(&quot;https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg&quot;);"></div>
+                <div class="caine-card">
+                  <h2 class="mdc-typography mdc-typography--headline6">Our Changing Planet</h2>
+                  <h3 class="mdc-typography mdc-typography--subtitle2">by Kurt Wagner</h3>
+                  <div class="mdc-typography mdc-typography--body2">Visit ten places on our planet that are undergoing the biggest changes today.</div>
+                </div>
+              </div>
+              <div class="mdc-card__actions">
+                <div class="mdc-card__action-buttons">
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">  <span class="mdc-button__ripple"></span> Read</button>
+                  <button class="mdc-button mdc-card__action mdc-card__action--button">  <span class="mdc-button__ripple"></span> Bookmark</button>
+                </div>
+                <div class="mdc-card__action-icons">
+                  <button class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to favorites">
+                    <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
+                    <i class="material-icons mdc-icon-button__icon">favorite_border</i>
+                  </button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Share" data-mdc-ripple-is-unbounded="true">share</button>
+                  <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>
